@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  res.send('<h1>Hello World! Deployed to Renderer</h1>')
+  res.send('<h1>Hello World! Auto deploy to renderer</h1>')
 })
 
 const PORT = 8080
