@@ -29,8 +29,8 @@ jobs:
         push : true
         tags: ${{ secrets.DOCKER_USERNAME }}/express_app
 
-      - name: Deploy
-        env:
-          deploy_url: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
-        run: |
-          curl "$deploy_url"
+    - name: Deploy
+      env:
+        deploy_url: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+      run: |
+        curl "$deploy_url"
